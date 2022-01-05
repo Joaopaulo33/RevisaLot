@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical">
+
+<ListView
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:id="@+id/lista_cards"
+    android:layout_margin="8dp">
+
+</ListView>
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/botaoAddCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="300dp"
+    android:layout_marginBottom="10dp"
+    app:backgroundTint="#808080"
+    android:onClick="novoCard"
+    android:src="@drawable/add1"/>
+</LinearLayout>

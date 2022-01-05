@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#DCDCDC"
+
+    >
+    <Button
+        android:layout_marginLeft="35dp"
+        android:id="@+id/botaoCardsDeUmaDisciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar os cards de bla"
+        android:background="@drawable/botao_estilo"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/lista_materias"
+        android:layout_margin="8dp"
+        android:dividerHeight="6dp"
+        android:theme="@android:style/Theme.Light"
+        >
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/botaoAddMaterias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="#FFFFFF"
+        android:onClick="novaMateria"
+
+        android:src="@drawable/add2"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RevisaLot</string>
+
+    <string name="botao_deletar">Deletar</string>
+    <string name="botao_salvar">Salvar</string>
+    <string name="botao_info">info</string>
+
+
+</resources>

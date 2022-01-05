@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Copyright (C) 2016 The Android Open Source Project
+         Licensed under the Apache License, Version 2.0 (the "License");
+         you may not use this file except in compliance with the License.
+         You may obtain a copy of the License at
+              http://www.apache.org/licenses/LICENSE-2.0
+         Unless required by applicable law or agreed to in writing, software
+         distributed under the License is distributed on an "AS IS" BASIS,
+         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and
+         limitations under the License.
+    -->
+    <!-- Layout for the editor -->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+tools:context=".EditorRevisao">
+
+<!-- Overview category -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Label -->
+    <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:paddingTop="16dp"
+    android:textColor="#F0514B"
+    android:textAppearance="?android:textAppearanceSmall"
+     android:text="Sobre revisao"
+         />
+
+    <!-- Input fields -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="4dp"
+        android:orientation="vertical">
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/assunto_editText"
+            android:hint="Conteúdo"
+            android:inputType="textCapWords"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+     android:textAppearance="?android:textAppearanceMedium"/>
+
+        <!-- Breed field -->
+         />
+    </LinearLayout>
+</LinearLayout>
+
+<!-- Gender category -->
+<LinearLayout
+    android:id="@+id/container_disciplina"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Label -->
+    <TextView
+        android:text="Disciplina"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp"
+        android:textColor="#F0514B"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <!-- Input field -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <!-- Gender drop-down spinner -->
+        <Spinner
+            android:id="@+id/spinner_diciplina"
+            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:paddingRight="16dp"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/botaoAddDisciplina"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add2"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/container_materia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="Matéria"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:textColor="#F0514B"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <!-- Input field -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- Gender drop-down spinner -->
+            <Spinner
+                android:id="@+id/spinner_materia"
+                android:layout_height="48dp"
+                android:layout_width="wrap_content"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add1"
+            android:id="@+id/botaoAddMaterias"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
